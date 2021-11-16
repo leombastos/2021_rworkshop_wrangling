@@ -39,4 +39,4 @@ vignettes/*.pdf
 .Renviron
 
 # Extra folders
-/complete/
+markdown/complete/
