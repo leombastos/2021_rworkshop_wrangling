@@ -1,0 +1,111 @@
+---
+title: "2021 AGSA R Workshop - Session 2 Agenda"
+output: html_document
+---
+
+# 1) Setup  
+```{r Setup, warning=F}
+# Loading packages (everytime you open R)
+library(dplyr) # wrangling
+library(tidyr) # wrangling
+library(purrr) # for iteration
+library(ggplot2) # plotting
+library(readr) # to read and write data
+library(car) # Anova
+library(broom.mixed) # model diagnostics
+library(ggthemes) # ggplot customization
+
+```
+
+
+```{r soyk_w - Reading data}
+soyk_w 
+
+# Checking first rows
+soyk_w
+
+```
+
+# 2) Exploratory Plots 
+```{r Point and curve}
+
+```
+
+# 3) Regression for one Location  
+```{r soyk_w2 - Wrangling a bit more}
+# Creating rep and location as categorical (factor)
+soyk_w2 <- soyk_w %>%
+  mutate(frep=factor(rep),
+         flocation=factor(location)) 
+
+soyk_w2
+```
+
+```{r Extracting only one location}
+# Extracting only one location (s1)
+soyk_w2_s1 <- soyk_w2 %>%
+  filter(flocation=="s1")
+
+soyk_w2_s1
+
+```
+
+```{r RCBD model for location s1}
+options(contrasts = c("contr.sum", "contr.poly"))
+
+soyk_reg_s1 
+
+```
+
+```{r tidy }
+tidy(soyk_reg_s1)
+```
+
+```{r Anova}
+
+```
+
+# 4) Model Assumptions  
+Why is this important?  
+
+```{r Extracting residuals information}
+soyk_reg_aug_s1 
+```
+
+
+## 4.1) Residuals are iid ~ N(0, var2)  
+
+On this plot, looking for:  
+- Spread around zero  
+- Homogeneity (no patterns)  
+- Outliers (>3 or <-3)  
+
+```{r Standardized Residuals vs. Fitted, message=F, warning=F}
+
+```
+
+On this plot, looking for normality (points on top of line)
+```{r Quantile-Quantile}
+
+```
+
+# 5) Automating analysis for all Locations with group_by(), nest(), and map()  
+```{r Automated regression for all locations }
+soyk_reg_all
+
+```
+
+```{r Checking ANOVAs}
+
+```
+
+```{r Checking Residuals, message=F, warning=F}
+
+```
+
+# 6) Plotting it all  
+```{r Plotting all with regression lines}
+soyk_reg_all 
+
+```
+
