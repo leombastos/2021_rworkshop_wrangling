@@ -27,6 +27,6 @@ The workshop is divided into 2 main sessions (1h/session):
     - "*session2_partial.Rmd*" for iteration   
 
 4. You can code along with us by watching the following YouTube videos (links will be posted later in November):  
-   - [day 1]()  
-   - [day 2]()  
+   - [wrangling]()  
+   - [iteration]()  
 
