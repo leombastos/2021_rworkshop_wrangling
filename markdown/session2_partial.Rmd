@@ -12,7 +12,7 @@ library(purrr) # for iteration
 library(ggplot2) # plotting
 library(readr) # to read and write data
 library(car) # Anova
-library(broom.mixed) # model diagnostics
+library(broom) # model diagnostics
 library(ggthemes) # ggplot customization
 
 ```

@@ -7,10 +7,10 @@ output: html_document
 
 ```{r Setup, warning=F}
 # Loading packages (everytime you open R)
+library(readxl) # to read excel files
 library(dplyr) # wrangling
 library(tidyr) # wrangling
 library(ggplot2) # plotting
-library(readxl) # to read excel files
 library(janitor) # to clean data
 library(readr) # to export csv
 
