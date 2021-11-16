@@ -14,7 +14,7 @@ The workshop is divided into 2 main sessions (1h/session):
     - `group_by()` and `summarise()`  
     - `select()`  
     - the piper operator `%>%`  
-- Iteration using the `map()` function  
+- Iteration using the `map()` and `map2()` functions  
 
 ## **Interested in "attending" the workshop?**  
 
