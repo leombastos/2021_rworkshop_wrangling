@@ -26,7 +26,7 @@ The workshop is divided into 2 main sessions (1h/session):
     - "*session1_partial.Rmd*" for data wrangling  
     - "*session2_partial.Rmd*" for iteration   
 
-4. You can code along with us by watching the following YouTube videos (links will be posted later in November):  
+4. You can code along with us by watching the following YouTube videos:  
    - [wrangling](https://www.youtube.com/watch?v=a1xDkdfrmfc)  
    - [iteration](https://www.youtube.com/watch?v=B0OPkdqHkVg)  
 
